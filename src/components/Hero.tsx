@@ -1,5 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { Github, Linkedin, Twitter, Mail, ArrowDown } from 'lucide-react';
+import ghaniImg from './ghani-img.jpeg';
+
 
 const Hero: React.FC = () => {
   const profileImageUrl = "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260";
@@ -46,9 +48,9 @@ const Hero: React.FC = () => {
       
       <div className="container-custom mx-auto grid md:grid-cols-2 gap-8 items-center">
         <div className="order-2 md:order-1">
-          <p className="text-sm sm:text-base font-medium text-primary mb-2 appear">Hello, I'm</p>
+          <p className="text-sm sm:text-base font-medium text-primary mb-2 appear">Hello, I'm Ghani Hussaini</p>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 appear delayed-1">
-            <span className="gradient-text">Ghani Hussaini</span>
+            {/* <span className="gradient-text">Ghani Hussaini</span> */}
           </h1>
           <h2 ref={textRef} className="text-xl sm:text-2xl text-foreground/80 mb-6 h-8 appear delayed-2"></h2>
           <p className="text-foreground/70 mb-8 max-w-md appear delayed-3">
@@ -81,16 +83,16 @@ const Hero: React.FC = () => {
           </div>
         </div>
         
-        <div className="order-1 md:order-2 flex justify-center appear">
-          <div className="relative">
-            <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary to-secondary opacity-20 blur-xl"></div>
-            <img 
-              src={profileImageUrl} 
-              alt="Ghani Hussaini" 
-              className="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover border-4 border-white dark:border-gray-800 shadow-xl"
-            />
+          <div className="order-1 md:order-2 flex justify-center appear">
+            <div className="relative">
+              <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary to-secondary opacity-20 blur-xl"></div>
+              <img 
+                src={ghaniImg}
+                alt="Ghani Hussaini" 
+                className="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover border-4 border-white dark:border-gray-800 shadow-xl"
+              />
+            </div>
           </div>
-        </div>
       </div>
       
       <a 
